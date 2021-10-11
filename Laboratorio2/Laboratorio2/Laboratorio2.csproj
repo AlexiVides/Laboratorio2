@@ -90,6 +90,12 @@
     <Compile Include="Vista\FrMostrarRegistros.Designer.cs">
       <DependentUpon>FrMostrarRegistros.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\FrmRegistroPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\FrmRegistroPersona.Designer.cs">
+      <DependentUpon>FrmRegistroPersona.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +108,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vista\FrMostrarRegistros.resx">
+      <DependentUpon>FrMostrarRegistros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\FrmRegistroPersona.resx">
+      <DependentUpon>FrmRegistroPersona.cs</DependentUpon>
+    </EmbeddedResource>
     <EntityDeploy Include="Data\BDAlmacenPersonas.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>BDAlmacenPersonas.Designer.cs</LastGenOutput>
