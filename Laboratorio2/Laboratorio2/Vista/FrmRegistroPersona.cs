@@ -21,17 +21,26 @@ namespace Laboratorio2.Vista
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            persona persona = new persona();
-            persona.nombrePersona = textNombre.Text;
-            persona.edadPersona = Convert.ToInt32(textEdad.Text);
-            persona.descripcionPersona = textDescripcion.Text;
+            try
+            {
+                persona persona = new persona();
+                persona.nombrePersona = textNombre.Text;
+                persona.edadPersona = Convert.ToInt32(textEdad.Text);
+                persona.descripcionPersona = textDescripcion.Text;
 
-            ClsPersona clsPersona = new ClsPersona();
-            clsPersona.Create(persona);
+                ClsPersona clsPersona = new ClsPersona();
+                clsPersona.Create(persona);
 
-            textNombre.Clear();
-            textEdad.Clear();
-            textDescripcion.Clear();
+                textNombre.Clear();
+                textEdad.Clear();
+                textDescripcion.Clear();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Llenar todos los campos ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
 
         }
 
@@ -45,7 +54,7 @@ namespace Laboratorio2.Vista
         {
             DialogResult opc;
             opc = MessageBox.Show("¿Desea abandonar la ventana?", "Salir del Programa", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (opc== DialogResult.OK)
+            if (opc == DialogResult.OK)
             {
                 Close();
             }
