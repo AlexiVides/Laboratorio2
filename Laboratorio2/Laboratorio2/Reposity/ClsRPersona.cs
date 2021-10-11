@@ -20,11 +20,11 @@ namespace Laboratorio2.Reposity
                     ConexionBd.persona.Add(persona);
                     ConexionBd.SaveChanges();
 
-                    MessageBox.Show("Se ha registrado exitosamente");
+                    MessageBox.Show("Se ha registrado exitosamente","Exitosamente");
 
                 }catch(Exception ex)
                 {
-                    MessageBox.Show("Error de base de datos");
+                    MessageBox.Show("Error de base de datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
