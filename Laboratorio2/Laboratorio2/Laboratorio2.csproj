@@ -79,8 +79,17 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Negocio\ClsPersona.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reposity\ClsRPersona.cs" />
+    <Compile Include="Service\IPersona.cs" />
+    <Compile Include="Vista\FrMostrarRegistros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\FrMostrarRegistros.Designer.cs">
+      <DependentUpon>FrMostrarRegistros.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -114,12 +123,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Negocio\" />
-    <Folder Include="Reposity\" />
-    <Folder Include="Service\" />
-    <Folder Include="Vista\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Data\BDAlmacenPersonas.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
