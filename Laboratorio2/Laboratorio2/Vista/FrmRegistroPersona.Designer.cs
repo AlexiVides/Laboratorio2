@@ -64,9 +64,10 @@ namespace Laboratorio2.Vista
             // 
             // textNombre
             // 
+            this.textNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textNombre.Location = new System.Drawing.Point(196, 82);
             this.textNombre.Name = "textNombre";
-            this.textNombre.Size = new System.Drawing.Size(201, 20);
+            this.textNombre.Size = new System.Drawing.Size(201, 29);
             this.textNombre.TabIndex = 2;
             // 
             // label3
@@ -81,9 +82,10 @@ namespace Laboratorio2.Vista
             // 
             // textEdad
             // 
+            this.textEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textEdad.Location = new System.Drawing.Point(196, 138);
             this.textEdad.Name = "textEdad";
-            this.textEdad.Size = new System.Drawing.Size(201, 20);
+            this.textEdad.Size = new System.Drawing.Size(201, 29);
             this.textEdad.TabIndex = 4;
             // 
             // label4
@@ -94,13 +96,14 @@ namespace Laboratorio2.Vista
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(115, 24);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Descripcion:";
+            this.label4.Text = "Descripción:";
             // 
             // textDescripcion
             // 
+            this.textDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDescripcion.Location = new System.Drawing.Point(196, 197);
             this.textDescripcion.Name = "textDescripcion";
-            this.textDescripcion.Size = new System.Drawing.Size(201, 20);
+            this.textDescripcion.Size = new System.Drawing.Size(201, 29);
             this.textDescripcion.TabIndex = 6;
             // 
             // btnCerrar
