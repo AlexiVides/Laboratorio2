@@ -29,12 +29,14 @@ namespace Laboratorio2.Vista
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrMostrarRegistros));
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DGVMostrar = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.BtnAtras = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVMostrar)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -47,18 +49,18 @@ namespace Laboratorio2.Vista
             this.label1.TabIndex = 0;
             this.label1.Text = "Vista de registros";
             // 
-            // dataGridView1
+            // DGVMostrar
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DGVMostrar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DGVMostrar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGVMostrar.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dataGridView1.Location = new System.Drawing.Point(57, 103);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(684, 318);
-            this.dataGridView1.TabIndex = 1;
+            this.DGVMostrar.Location = new System.Drawing.Point(61, 71);
+            this.DGVMostrar.Name = "DGVMostrar";
+            this.DGVMostrar.Size = new System.Drawing.Size(684, 318);
+            this.DGVMostrar.TabIndex = 1;
             // 
             // Column1
             // 
@@ -75,17 +77,31 @@ namespace Laboratorio2.Vista
             this.Column3.HeaderText = "Descripcion";
             this.Column3.Name = "Column3";
             // 
+            // BtnAtras
+            // 
+            this.BtnAtras.Location = new System.Drawing.Point(713, 415);
+            this.BtnAtras.Name = "BtnAtras";
+            this.BtnAtras.Size = new System.Drawing.Size(75, 23);
+            this.BtnAtras.TabIndex = 2;
+            this.BtnAtras.Text = "Atras";
+            this.BtnAtras.UseVisualStyleBackColor = true;
+            this.BtnAtras.Click += new System.EventHandler(this.BtnAtras_Click);
+            // 
             // FrMostrarRegistros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.BtnAtras);
+            this.Controls.Add(this.DGVMostrar);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrMostrarRegistros";
-            this.Text = "FrMostrarRegistros";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Mostrar Registros";
+            this.Load += new System.EventHandler(this.FrMostrarRegistros_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DGVMostrar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -94,9 +110,10 @@ namespace Laboratorio2.Vista
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DGVMostrar;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.Button BtnAtras;
     }
 }
