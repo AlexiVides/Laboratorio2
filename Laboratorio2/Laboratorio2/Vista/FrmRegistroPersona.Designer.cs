@@ -111,6 +111,7 @@ namespace Laboratorio2.Vista
             this.btnCerrar.TabIndex = 7;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // btnRegistro
             // 
@@ -122,6 +123,7 @@ namespace Laboratorio2.Vista
             this.btnRegistro.TabIndex = 8;
             this.btnRegistro.Text = " Ver Registro";
             this.btnRegistro.UseVisualStyleBackColor = false;
+            this.btnRegistro.Click += new System.EventHandler(this.btnRegistro_Click);
             // 
             // btnGuardar
             // 
@@ -133,13 +135,14 @@ namespace Laboratorio2.Vista
             this.btnGuardar.TabIndex = 9;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // FrmRegistroPersona
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 440);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnRegistro);
             this.Controls.Add(this.btnCerrar);
