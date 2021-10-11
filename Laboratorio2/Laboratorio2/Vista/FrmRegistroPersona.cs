@@ -38,7 +38,7 @@ namespace Laboratorio2.Vista
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Llenar todos los campos ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Llenar los campos ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
 
